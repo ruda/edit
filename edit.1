@@ -1,0 +1,26 @@
+.Dd February 24, 2017
+.Dt EDIT 1
+.Os
+.Sh NAME
+.Nm edit
+.Nd execute an external editor to edit files
+.Sh SYNOPSIS
+.Nm
+.Op Ar options ...
+.Sh DESCRIPTION
+The
+.Nm
+utility executes the editor defined in EDITOR environment variable or
+executes vi, if the variable is not defined, to edit files. All command line
+arguments are passed to the editor without modification.
+The program name after the execution of
+.Nm
+is changed to the name of the editor.
+.Sh EXIT STATUS
+The
+.Nm
+utility exits 1 on failure.
+.Sh SEE ALSO
+.Xr vi 1 ,
+.Xr vim 1 ,
+.Xr emacs 1
